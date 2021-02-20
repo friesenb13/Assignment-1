@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2, 
+    "name": "This is my extension",
+    "description": "wow so cool",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "allFrames": true,
+            "js": ["/js/jquery.js", "/js/content.js"],
+            "css": ["/css/style.css"],
+            "run_at": "document_end"
+       }
+     ],
+    "action": {
+        "default_icon": {
+            "32":"/images/cat-laugh.png" /*32 x 32*/
+        },
+        "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [ 
+        "images/*.jpg",
+        "images/*.png",
+        "images/*.gif"
+     ] 
+}

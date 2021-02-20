@@ -1,0 +1,16 @@
+/* CSS HERE */
+
+
+/* Try: updating the background to a gradient */
+
+
+/* Try: changing the font styling of h1 or h2 elements */
+
+
+/* Try: targeting one element on a specific site and changing something about it's appearance*/
+
+
+body, h1, p, h2, h3, h4{
+/*    background-color: lightpink !important;*/
+    font-family: 'Indie Flower', cursive !important;
+}
