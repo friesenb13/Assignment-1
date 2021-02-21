@@ -1,18 +1,28 @@
-//console.log("extension is running!")
-//
-//$("header").after("hello from the extension")
-//
-//const text = document.querySelectorAll('h1, h2, h3, h4, h5, p, li, td, caption, span, a')
-//
-//for (let i=0; i<text.length; i++){
-//    if (text[i].innerHTML.includes('pandemic')){
-//        text[i].innerHTML = text[i].innerHTML.replace('panoramic')
-//    }
-//}
+console.log("extension is running!")
+
+//tutorial from Coding Train https://www.youtube.com/watch?v=8zMMOdI5SOk
+let filenames = [
+    "meme1.jpg",
+    "meme2.jpg",
+    "meme3.jpg",
+];
+
+
+let imgs = document.getElementsByTagName('img');
+
+for (imgElt of imgs) {
+    let r =Math.floor(Math.random() * filenames.length);
+    let file= 'images/' +filenames [r];
+    let url =chrome.extension.getURL(file);
+        imgElt.src = url;
+    console.log(url);
+}
 
 
 //code from https://9to5google.com/2015/06/14/how-to-make-a-chrome-extensions/
 var elements = document.getElementsByTagName('*');
+
+
 
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
@@ -30,12 +40,3 @@ for (var i = 0; i < elements.length; i++) {
         }
     }
 }
-
-
-
-
-// TRY: updating the text content of an element or set of elements on one or more pages
-
-// TRY: adding a click event listener to an element that changes the background of that element to a new color
-
-// TRY: using a mouseenter event listener to update text to something new.

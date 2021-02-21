@@ -1,6 +1,6 @@
 {
     "manifest_version": 2, 
-    "name": "This is my extension",
+    "name": "Pandemic Extension",
     "description": "wow so cool",
     "version": "1.0",
     "permissions": ["activeTab"],
