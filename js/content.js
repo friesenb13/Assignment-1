@@ -1,10 +1,39 @@
 console.log("extension is running!")
 
-//tutorial from Coding Train https://www.youtube.com/watch?v=8zMMOdI5SOk
+//attempt to add gifs by clicking popup button???
+var gif =[
+    "gif1.gif",
+    "gif2.gif",
+    "gif3.gif",
+    "gif4.gif",
+    "gif5.gif",
+    "gif6.gif",
+    "gif7.gif",
+    "gif8.gif",
+    "gif9.gif",
+]
+console.log(gif.length)
+
+var $button = $("#mybutton")
+var x =0;
+
+
+
+
+
+//tutorial from Coding Train https://www.youtube.com/watch?v=8zMMOdI5SOk for Image Replacement
 let filenames = [
     "meme1.jpg",
     "meme2.jpg",
     "meme3.jpg",
+    "gif1.gif",
+    "gif2.gif",
+    "gif3.gif",
+    "gif4.gif",
+    "gif5.gif",
+    "gif6.gif",
+    "gif7.gif",
+    "gif8.gif",
 ];
 
 
@@ -19,7 +48,7 @@ for (imgElt of imgs) {
 }
 
 
-//code from https://9to5google.com/2015/06/14/how-to-make-a-chrome-extensions/
+//code from https://9to5google.com/2015/06/14/how-to-make-a-chrome-extensions/ for word replacement
 var elements = document.getElementsByTagName('*');
 
 
@@ -32,7 +61,7 @@ for (var i = 0; i < elements.length; i++) {
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/pandemic/gi, 'panoramic');
+            var replacedText = text.replace(/pandemic/gi, 'Panoramic');
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
