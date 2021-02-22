@@ -9,13 +9,15 @@
             "matches": ["<all_urls>"],
             "allFrames": true,
             "js": ["/js/jquery.js", "/js/content.js"],
-            "css": ["/css/style.css"],
+            "css": ["/css/style.css", "/css/font.css"],
             "run_at": "document_end"
        }
      ],
     "action": {
         "default_icon": {
-            "32":"/images/cat-laugh.png" /*32 x 32*/
+            "32":"/images/mask1.png", /*32 x 32*/
+            "48":"/images/mask2.png",
+            "128":"/images/mask3.png"
         },
         "default_popup": "popup.html"
     },
