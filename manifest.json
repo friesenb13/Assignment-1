@@ -1,7 +1,7 @@
 {
     "manifest_version": 2, 
     "name": "Pandemic Extension",
-    "description": "wow so cool",
+    "description": "Change the word pandemic to panoramic and enjoy some gifs!",
     "version": "1.0",
     "permissions": ["activeTab"],
     "content_scripts": [

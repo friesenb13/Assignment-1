@@ -1,24 +1,12 @@
 console.log("extension is running!")
 
-//attempt to add gifs by clicking popup button???
-var gif =[
-    "gif1.gif",
-    "gif2.gif",
-    "gif3.gif",
-    "gif4.gif",
-    "gif5.gif",
-    "gif6.gif",
-    "gif7.gif",
-    "gif8.gif",
-    "gif9.gif",
-]
-console.log(gif.length)
 
-var $button = $("#mybutton")
-var x =0;
-
-
-
+chrome.runtime.onMessage.addListener(
+function(request) {
+      var color = request.message;
+      $("body").css("background", color)
+  }
+);
 
 
 //tutorial from Coding Train https://www.youtube.com/watch?v=8zMMOdI5SOk for Image Replacement
