@@ -1,7 +1,7 @@
 console.log("i'm the popup")
 
 $("#pink").on("click", changeTheme);
-$("#yellow").on("click", changeTheme);
+$("#lemonchiffon").on("click", changeTheme);
 
 
  

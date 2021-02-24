@@ -1,7 +1,14 @@
+@import url("font.css");
+
+body{
+    font-family: 'Indie Flower'!important;
+    background-color:antiquewhite;
+}
+
 .pink{
     background-color:lightpink;
 }
 
-.yellow{
-    background-color:lightyellow;
+.lemonchiffon{
+    background-color:lemonchiffon;
 }
